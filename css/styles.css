@@ -18,6 +18,15 @@ body {
   background-attachment: fixed;
 }
 
+/* Add these container styles at the top after body */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
 /* TITLE AND SUBTITLE STYLES
 -------------------------------------------------- */
 /* Main title image at the top */
@@ -46,6 +55,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 0px;
+  min-height: 60vh;
+  width: 100%;
+  position: relative;
 }
 
 /* Individual column settings */
@@ -297,6 +309,67 @@ body {
   .footer a {
       font-size: 14px;
   }
+}
+
+/* Add these media queries at the end of your file */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Scale images proportionally */
+    .title-img,
+    .subtitle-img,
+    .left-text-img,
+    .rayo-img,
+    .profile-img,
+    .flecha-img,
+    .yerba-icon,
+    .cafeina-icon,
+    .taurina-icon,
+    .hidratacion-icon {
+        transform-origin: center;
+        transform: scale(0.9) translateX(-50%);
+    }
+}
+
+@media (max-width: 992px) {
+    /* Further scale down for medium screens */
+    .title-img,
+    .subtitle-img,
+    .left-text-img,
+    .rayo-img,
+    .profile-img,
+    .flecha-img,
+    .yerba-icon,
+    .cafeina-icon,
+    .taurina-icon,
+    .hidratacion-icon {
+        transform: scale(0.8) translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Scale down for mobile while maintaining positions */
+    .title-img,
+    .subtitle-img,
+    .left-text-img,
+    .rayo-img,
+    .profile-img,
+    .flecha-img,
+    .yerba-icon,
+    .cafeina-icon,
+    .taurina-icon,
+    .hidratacion-icon {
+        transform: scale(0.7) translateX(-50%);
+    }
 }
 
 /* Add these styles at the end of your CSS file */
