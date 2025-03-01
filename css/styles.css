@@ -1,0 +1,330 @@
+/* Add Montserrat font import at the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* ROOT VARIABLES & GENERAL BODY STYLES
+-------------------------------------------------- */
+:root {
+  --bs-body-font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Main background settings */
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  background-image: url('../assets/video/FONDOWEBP.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* TITLE AND SUBTITLE STYLES
+-------------------------------------------------- */
+/* Main title image at the top */
+.title-img {
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Subtitle image below the title */
+.subtitle-img {
+  max-width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-top: -30px; /* Negative value moves up, positive moves down */
+}
+
+/* MAIN ROW LAYOUT STYLES
+-------------------------------------------------- */
+/* Controls the 5-column layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+
+/* Individual column settings */
+.col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
+/* COLUMN 1: LEFT TEXT IMAGE
+-------------------------------------------------- */
+.left-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;  /* Set a specific height */
+    position: relative;
+    margin-top: -50px;
+}
+
+.left-text-img {
+    width: 250px;  /* Set back to original size */
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 15%; /* Adjust this percentage to move up/down */
+    left: 50%; /* Adjust this percentage to move left/right */
+    transform: translateX(-10%); /* Centers the image */
+}
+
+/* COLUMN 2: LIGHTNING BOLT IMAGE
+-------------------------------------------------- */
+.rayo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;  /* Set a specific height */
+  position: relative;
+  margin-top: -50px;
+}
+
+.rayo-img {
+  width: 150px;  /* Keep only this size control */
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 30%; /* Adjust this percentage to move up/down */
+  left: 50%; /* Adjust this percentage to move left/right */
+  transform: translateX(-10%); /* Centers the image */
+}
+
+/* COLUMN 3: MAIN PROFILE/CAN IMAGE
+-------------------------------------------------- */
+.profile {
+  width: 200%;
+  height: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.profile-img {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-width: 150%;
+  margin-top: -50px; /* Adjust this value to move up/down */
+}
+
+/* COLUMN 4: ARROWS CONTAINER
+-------------------------------------------------- */
+.flecha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;  /* Set a specific height */
+  position: relative;
+  margin-top: -50px;
+}
+
+.flecha-img:nth-child(1) {
+  width: 80px;  /* Change this value to resize */
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0%; /* Adjust this percentage to move up/down */
+  left: 50%; /* Adjust this percentage to move left/right */
+  transform: translateX(-150%);
+}
+
+.flecha-img:nth-child(2) {
+  width: 80px;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-150%);
+}
+
+.flecha-img:nth-child(3) {
+  width: 80px;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-150%);
+}
+
+.flecha-img:nth-child(4) {
+  width: 80px;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 4;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-150%);
+}
+
+/* COLUMN 5: ICONS CONTAINER
+-------------------------------------------------- */
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;  /* Set a specific height */
+  margin-top: -50px;
+  position: relative; /* Add this */
+}
+
+/* Individual icon size controls */
+.yerba-icon {
+    width: 250px;  /* Change this value to resize */
+    height: auto;
+    display: block;
+    position: absolute; /* Change to absolute */
+    z-index: 5; /* Control stacking order */
+    top: 0%; /* Adjust this percentage to move up/down */
+    left: 50%; /* Adjust this percentage to move left/right */
+    transform: translateX(-120%); /* Centers the icon */
+}
+
+.cafeina-icon {
+    width: 330px;  /* Change this value to resize */
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 25%; /* Adjust this percentage to move up/down */
+    left: 50%; /* Adjust this percentage to move left/right */
+    transform: translateX(-90%);
+}
+
+.taurina-icon {
+    width: 290px;  /* Change this value to resize */
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 50%; /* Adjust this percentage to move up/down */
+    left: 60%; /* Adjust this percentage to move left/right */
+    transform: translateX(-102%);
+}
+
+.hidratacion-icon {
+    width: 250px;  /* Change this value to resize */
+    height: auto;
+    display: block;
+    position: absolute;
+    z-index: 4;
+    top: 80%; /* Adjust this percentage to move up/down */
+    left: 50%; /* Adjust this percentage to move left/right */
+    transform: translateX(-120%);
+}
+
+/* RESPONSIVE DESIGN SETTINGS
+-------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Title and main images responsive sizes */
+  .profile-img {
+      height: auto;
+      max-width: 80%;
+  }
+  .subtitle-img {
+      max-width: 200px;
+  }
+  .left-text-img {
+      max-width: 80%;
+      margin-bottom: 20px;
+  }
+
+  /* Maintain horizontal layout on mobile */
+  .row {
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+  
+  /* Column adjustments for mobile */
+  .col {
+      flex: 1;
+  }
+
+  /* Mobile image sizes */
+  .left-text-img,
+  .profile-img,
+  .rayo-img {
+      max-width: 100%;
+  }
+
+  /* Mobile arrows adjustments */
+  .flecha-container {
+      gap: 10px;
+  }
+  .flecha-img {
+      max-width: 30px;
+  }
+
+  /* Mobile icons adjustments */
+  .yerba-icon {
+      width: 150px; /* Adjust mobile size */
+  }
+  .cafeina-icon,
+  .taurina-icon,
+  .hidratacion-icon {
+      width: 40px; /* Adjust mobile size */
+  }
+
+  .footer-container {
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+  
+  .footer a {
+      font-size: 14px;
+  }
+}
+
+/* Add these styles at the end of your CSS file */
+.footer {
+    background-color: #000000;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 50px; /* Add space between content and footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 0.8;
+}
